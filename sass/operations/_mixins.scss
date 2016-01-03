@@ -12,3 +12,28 @@
 	}
 
 }
+
+@mixin button-theme($button-color) {
+
+  border-color: transparent;
+  background-color: $button-color;
+
+  &:hover {
+     background-color: darken($button-color, 10%);
+  }
+
+  &:active {
+     background-color: darken($button-color, 10%);
+  }
+
+}
+
+@mixin alert-theme($alert-color) {
+
+  border-color: $alert-color;
+  background-color: lighten($alert-color, 50%);
+  color: $alert-color;
+
+}
+
+

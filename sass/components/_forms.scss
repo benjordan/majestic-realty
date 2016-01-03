@@ -6,7 +6,7 @@ textarea {
   font-family: inherit;
   font-size: 100%;
   margin: 0;
-  
+
   &:focus {
 	  outline-color: #999;
   }
@@ -31,32 +31,6 @@ input[type="text"].datepicker {
 	background: url('../img/icon-date.png') 97% center no-repeat #fff;
 }
 
-input[type="checkbox"] {
-    display: none;
-    margin-right: 15px;
-}
-
-input[type="checkbox"] + label {
-	font-size: .875em;
-	color: $text;
-	letter-spacing: normal;
-	text-transform: none;
-}
-
-input[type="checkbox"] + label span {
-    width: 17px;
-    height: 17px;
-    margin: -1px 10px 0 0;
-    vertical-align: middle;
-    background: image-url('checkbox.png') left top no-repeat;
-    cursor: pointer;
-    display: inline-block;
-}
-
-input[type="checkbox"]:checked + label span {
-    background: image-url('checkbox.png') -17px top no-repeat;
-}
-
 input[type="radio"] {
 	float: left;
 	display: inline-block;
@@ -69,16 +43,17 @@ input[type="radio"] {
 }
 
 label {
+	@include primary_font;
 	width: 100%;
-	font-size: .6875em;
-	color: #c7c5bf;
+	font-size: .75em;
+	color: white;
 	text-transform: uppercase;
-	letter-spacing: .1em;
+	letter-spacing: .15em;
 	display: inline-block;
 }
 
 .select {
-	
+
 	select {
 		width: 100%;
 		height: 50px;
@@ -88,7 +63,7 @@ label {
 		border-radius: 0;
 		-webkit-appearance: none;
 	}
-	
+
 	label {position:relative}
 	label:after {
 	    content:'<>';
@@ -107,12 +82,12 @@ label {
 }
 
 textarea {
-	min-height: 200px; 
+	min-height: 200px;
 }
-	
+
 button a {
 	color: white;
-	
+
 	&:hover {
 		color: white;
 	}
@@ -174,6 +149,7 @@ input,
 button,
 select,
 textarea {
+	@include primary_font;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -184,19 +160,4 @@ input,
 select[multiple],
 textarea {
   background-image: none;
-}
-
-input[type=submit] {
-	padding: 10px 30px;
-	color:#666666;
-	font-size: 16px;
-	font-weight: 400;
-	text-transform: uppercase;
-	border:1px solid #c4c4c4;
-	background-color:#f4f4f4;
-	cursor: pointer;
-	@include text-shadow(0 1px 0 rgba(255,255,255,1));
-	@include border-radius(5px);
-	@include box-shadow(0px 1px 0px #ffffff, inset);
-	@include background-image(linear-gradient(#f4f4f4, #d6d6d6));
 }
