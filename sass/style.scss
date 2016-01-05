@@ -30,6 +30,7 @@
 
 html {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	min-width: 1000px;
 }
 
 body {
@@ -37,7 +38,16 @@ body {
 	font-size: 100%;
 	line-height: 1.5em;
 	color: $text;
-	background-color: $darkest-grey;
+	background-color: #eaeaea;
+
+	.under-banner {
+		position: absolute;
+		height: 160px;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: $darkest-grey;
+	}
 }
 
 html, body {
@@ -47,6 +57,7 @@ html, body {
 	overflow-x: hidden;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
+	min-width: 1000px;
 }
 
 audio,

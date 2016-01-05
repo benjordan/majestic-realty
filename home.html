@@ -11,10 +11,13 @@
 
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/s/dt/jqc-1.11.3,dt-1.10.10,r-2.0.0/datatables.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
 <body>
+<div class="remodal-bg">
+<div class="under-banner"></div>
 
 	<header>
 
@@ -40,11 +43,11 @@
 					<nav class="nav-collapse">
 						<ul>
 							<li><a href="home.html" class="active">Service Requests</a></li>
-							<li><a href="employees.html">Employees</a></li>
-							<li><a href="properties.html">Properties</a></li>
-							<li><a href="tenant-search.html">Tenant Search</a></li>
-							<li><a href="reports.html">Reports</a></li>
-							<li><a href="payroll.html">Payroll</a></li>
+							<li><a href="">Employees</a></li>
+							<li><a href="">Properties</a></li>
+							<li><a href="">Tenant Search</a></li>
+							<li><a href="">Reports</a></li>
+							<li><a href="">Payroll</a></li>
 						</ul>
 					</nav>
 				</div> <!-- /col12 -->
@@ -59,27 +62,263 @@
 
 		<div class="page-header">
 			<div class="col6"><h2>Service Contracts</h2></div>
-			<div class="col6 text-right"><button class="button primary">Add New</button></div>
+			<div class="col6 text-right"><a data-remodal-target="modal"><button class="button primary">Add New</button></a></div>
 		</div>
 
-		<div class="col12">Home Content</div>
+		<table class="table" id="smart-table">
+			<thead>
+				<tr>
+					<th>WO#</th>
+					<th>Property</th>
+					<th>Unit</th>
+					<th>Tenant</th>
+					<th>Submitted</th>
+					<th>Category</th>
+					<th>Status</th>
+					<th>Dispatched to</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td><a href="">23449</a></td>
+					<td><a href="">Josey Lane</a></td>
+					<td>224</td>
+					<td><a href="">King Institute</a></td>
+					<td>25 minutes ago</td>
+					<td>HVAC</td>
+					<td>In Progress</td>
+					<td>Chris Yates</td>
+					<td><i class="fa fa-pencil"></i></td>
+				</tr>
+
+				<tr>
+					<td><a href="">23449</a></td>
+					<td><a href="">Josey Lane</a></td>
+					<td>224</td>
+					<td><a href="">King Institute</a></td>
+					<td>25 minutes ago</td>
+					<td>HVAC</td>
+					<td>In Progress</td>
+					<td>Chris Yates</td>
+					<td><i class="fa fa-pencil"></i></td>
+				</tr>
+
+				<tr>
+					<td><a href="">23449</a></td>
+					<td><a href="">Josey Lane</a></td>
+					<td>224</td>
+					<td><a href="">King Institute</a></td>
+					<td>25 minutes ago</td>
+					<td>HVAC</td>
+					<td>In Progress</td>
+					<td>Chris Yates</td>
+					<td><i class="fa fa-pencil"></i></td>
+				</tr>
+
+				<tr>
+					<td><a href="">23449</a></td>
+					<td><a href="">Josey Lane</a></td>
+					<td>224</td>
+					<td><a href="">King Institute</a></td>
+					<td>25 minutes ago</td>
+					<td>HVAC</td>
+					<td>In Progress</td>
+					<td>Chris Yates</td>
+					<td><i class="fa fa-pencil"></i></td>
+				</tr>
+
+				<tr>
+					<td><a href="">23449</a></td>
+					<td><a href="">Josey Lane</a></td>
+					<td>224</td>
+					<td><a href="">King Institute</a></td>
+					<td>25 minutes ago</td>
+					<td>HVAC</td>
+					<td>In Progress</td>
+					<td>Chris Yates</td>
+					<td><i class="fa fa-pencil"></i></td>
+				</tr>
+
+				<tr>
+					<td><a href="">23449</a></td>
+					<td><a href="">Josey Lane</a></td>
+					<td>224</td>
+					<td><a href="">King Institute</a></td>
+					<td>25 minutes ago</td>
+					<td>HVAC</td>
+					<td>In Progress</td>
+					<td>Chris Yates</td>
+					<td><i class="fa fa-pencil"></i></td>
+				</tr>
+
+				<tr>
+					<td><a href="">23449</a></td>
+					<td><a href="">Josey Lane</a></td>
+					<td>224</td>
+					<td><a href="">King Institute</a></td>
+					<td>25 minutes ago</td>
+					<td>HVAC</td>
+					<td>In Progress</td>
+					<td>Chris Yates</td>
+					<td><i class="fa fa-pencil"></i></td>
+				</tr>
+
+				<tr>
+					<td><a href="">23449</a></td>
+					<td><a href="">Josey Lane</a></td>
+					<td>224</td>
+					<td><a href="">King Institute</a></td>
+					<td>25 minutes ago</td>
+					<td>HVAC</td>
+					<td>In Progress</td>
+					<td>Chris Yates</td>
+					<td><i class="fa fa-pencil"></i></td>
+				</tr>
+
+				<tr>
+					<td><a href="">23449</a></td>
+					<td><a href="">Josey Lane</a></td>
+					<td>224</td>
+					<td><a href="">King Institute</a></td>
+					<td>25 minutes ago</td>
+					<td>HVAC</td>
+					<td>In Progress</td>
+					<td>Chris Yates</td>
+					<td><i class="fa fa-pencil"></i></td>
+				</tr>
+
+				<tr>
+					<td><a href="">23449</a></td>
+					<td><a href="">Josey Lane</a></td>
+					<td>224</td>
+					<td><a href="">King Institute</a></td>
+					<td>25 minutes ago</td>
+					<td>HVAC</td>
+					<td>In Progress</td>
+					<td>Chris Yates</td>
+					<td><i class="fa fa-pencil"></i></td>
+				</tr>
+			</tbody>
+		</table>
 
 	</div> <!-- /row page-content -->
 	</div> <!-- /container -->
+
+	<!-- ADD MODAL FOR ADD NEW FORM -->
+	<div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+	  <button data-remodal-action="close" class="remodal-close"></button>
+	  <h3>Add Service Contract</h3>
+			  <form method="post" action="" id="add-service-contract-form">
+
+			  	<div class="form-options">
+			  		<div class="col3">
+				  		<label for="special_project">
+				  			<input type="checkbox"> Is special project?
+				  		</label>
+				  	</div>
+
+				  	<div class="col3">
+				  		<label for="permission">
+				  			<input type="checkbox"> Permission to enter
+				  		</label>
+				  	</div>
+
+				  	<div class="col3">
+				  		<label for="has_alarm">
+				  			<input type="checkbox"> Unit has alarm
+				  		</label>
+				  	</div>
+
+				  	<div class="col3">
+				  		<label for="has_pets">
+				  			<input type="checkbox"> Unit has pets
+				  		</label>
+				  	</div>
+			  	</div>
+
+			  	<div class="col4">
+				  	<label for="property">Property:</label>
+				  	<div class="select-style">
+				  		<select name="property">
+				  			<option value="">~Choose Property</option>
+				  			<option value="1">17000</option>
+				  			<option value="2">Bamboo, Mesquite</option>
+				  		</select>
+				  	</div>
+			  	</div>
+
+			  	<div class="col4">
+			  		<label for="unit">Unit:</label>
+				  	<div class="select-style">
+				  		<select name="property">
+				  			<option value="">~Choose Unit</option>
+				  			<option value="1">17000</option>
+				  			<option value="2">Bamboo, Mesquite</option>
+				  		</select>
+				  	</div>
+			  	</div>
+
+			  	<div class="col4">
+			  		<label for="request_category">Request Category:</label>
+				  	<div class="select-style">
+				  		<select name="request_category">
+				  			<option value="">~Choose Unit</option>
+				  		</select>
+				  	</div>
+			  	</div>
+
+			  	<div class="col12">
+			  		<label for="tenant_name">Tenant Name:</label>
+			  		<input type="text" name="tenant_name">
+			  	</div>
+
+			  	<div class="col6">
+			  		<label for="email">Email <small>[Please update if incorrect]</small>:</label>
+			  		<input type="text" name="email">
+			  	</div>
+
+			  	<div class="col6">
+			  		<label for="phone">Phone <small>[Please update if incorrect]</small>:</label>
+			  		<input type="text" name="phone">
+			  	</div>
+
+			  	<div class="col12">
+			  		<label for="request_details">Request Detail:</label>
+			  		<textarea name="request_details"></textarea>
+			  	</div>
+
+			  	<div class="col12">
+			  		<input type="submit" data-remodal-action="confirm" class="button primary large remodal-confirm">
+			  	</div>
+
+			  </form>
+	</div>
 
 	<footer>
 		&copy; Copyright Things.</div>
 	</footer>
 
 	<script src="js/vendor/jquery-2.1.1.min.js"></script>
-	<script src="js/vendor/jquery.backstretch.min.js"></script>
+
 	<script src="js/vendor/responsive-nav.min.js"></script>
 
 	<script src="js/main.js"></script>
 
+	<script type="text/javascript" src="https://cdn.datatables.net/s/dt/jq-2.1.4,dt-1.10.10,r-2.0.0/datatables.min.js"></script>
+	<script src="js/vendor/jquery.backstretch.min.js"></script>
+	<script src="js/vendor/remodal.min.js"></script>
+
+
 	<script type="text/javascript">
-		 $.backstretch("img/banners/toronto-buildings.jpg");
+		$("header").backstretch("img/banners/toronto-buildings.jpg");
+		$(document).ready(function(){
+		  $('#smart-table').DataTable();
+		});
 	</script>
+
+</div> <!-- /remodal-bg -->
 </body>
 
 </html>
