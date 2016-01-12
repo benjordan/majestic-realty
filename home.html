@@ -17,10 +17,9 @@
 
 <body>
 <div class="remodal-bg">
-<div class="under-banner"></div>
 
 	<header>
-
+		<div class="top-banner"></div>
 		<div class="title-bar">
 		<div class="container">
 			<div class="row">
@@ -63,6 +62,38 @@
 		<div class="page-header">
 			<div class="col6"><h2>Service Contracts</h2></div>
 			<div class="col6 text-right"><a data-remodal-target="modal"><button class="button primary">Add New</button></a></div>
+		</div>
+
+		<div class="filter-search-bar">
+			<div class="row">
+
+				<div class="col2">
+					<label for="wo_status">Work Order Status</label>
+					<select class="form-control" name="wo_status"><option value="">~ Select</option></select>
+				</div>
+
+				<div class="col3">
+					<label for="property_name">Property Name</label>
+					<select class="form-control" name="property_name"><option value="">~ Select</option></select>
+				</div>
+
+				<div class="col3">
+					<label for="employee">Employee</label>
+					<select class="form-control" name="employee"><option value="">~ Select</option></select>
+				</div>
+
+				<div class="col2">
+					<label for="date_range">Date Range</label>
+					<input type="date" name="date_range">
+				</div>
+
+				<div class="col2">
+					<label for="tenant">Tenant Name</label>
+					<input type="text" name="tenant">
+				</div>
+
+			</div>
+
 		</div>
 
 		<table class="table" id="smart-table">
@@ -240,48 +271,42 @@
 
 			  	<div class="col4">
 				  	<label for="property">Property:</label>
-				  	<div class="select-style">
-				  		<select name="property">
-				  			<option value="">~Choose Property</option>
-				  			<option value="1">17000</option>
-				  			<option value="2">Bamboo, Mesquite</option>
-				  		</select>
-				  	</div>
+			  		<select class="form-control" name="property">
+			  			<option value="">~Choose Property</option>
+			  			<option value="1">17000</option>
+			  			<option value="2">Bamboo, Mesquite</option>
+			  		</select>
 			  	</div>
 
 			  	<div class="col4">
 			  		<label for="unit">Unit:</label>
-				  	<div class="select-style">
-				  		<select name="property">
-				  			<option value="">~Choose Unit</option>
-				  			<option value="1">17000</option>
-				  			<option value="2">Bamboo, Mesquite</option>
-				  		</select>
-				  	</div>
+			  		<select class="form-control" name="property">
+			  			<option value="">~Choose Unit</option>
+			  			<option value="1">17000</option>
+			  			<option value="2">Bamboo, Mesquite</option>
+			  		</select>
 			  	</div>
 
 			  	<div class="col4">
 			  		<label for="request_category">Request Category:</label>
-				  	<div class="select-style">
-				  		<select name="request_category">
-				  			<option value="">~Choose Unit</option>
-				  		</select>
-				  	</div>
+			  		<select class="form-control" name="request_category">
+			  			<option value="">~Choose Unit</option>
+			  		</select>
 			  	</div>
 
 			  	<div class="col12">
 			  		<label for="tenant_name">Tenant Name:</label>
-			  		<input type="text" name="tenant_name">
+			  		<input type="text" name="tenant_name" class="form-control">
 			  	</div>
 
 			  	<div class="col6">
 			  		<label for="email">Email <small>[Please update if incorrect]</small>:</label>
-			  		<input type="text" name="email">
+			  		<input type="text" name="email" class="form-control">
 			  	</div>
 
 			  	<div class="col6">
 			  		<label for="phone">Phone <small>[Please update if incorrect]</small>:</label>
-			  		<input type="text" name="phone">
+			  		<input type="text" name="phone" class="form-control">
 			  	</div>
 
 			  	<div class="col12">
@@ -312,7 +337,7 @@
 
 
 	<script type="text/javascript">
-		$("header").backstretch("img/banners/toronto-buildings.jpg");
+		$(".top-banner").backstretch("img/banners/toronto-buildings.jpg");
 		$(document).ready(function(){
 		  $('#smart-table').DataTable();
 		});
