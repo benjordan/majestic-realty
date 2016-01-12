@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Majestic Realty Portal</title>
+	<meta name="description" content="Workorder portal for Majestic Realty">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/s/dt/jqc-1.11.3,dt-1.10.10,r-2.0.0/datatables.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+<div class="remodal-bg">
+
+	<header>
+		<div class="top-banner"></div>
+		<div class="title-bar">
+		<div class="container">
+			<div class="row">
+				<div class="col8">
+					<div class="site-title">Majestic Realty Services, Inc.</div>
+				</div> <!-- /col8 -->
+
+				<div class="col4 account-block">
+					Welcome, User Name
+					<a href="index.html"><i class="fa fa-sign-out"></i></a>
+				</div>
+			</div> <!-- /row -->
+		</div> <!-- /container -->
+		</div> <!-- /title-bar -->
+
+		<div class="nav-bar">
+		<div class="container">
+			<div class="row">
+				<div class="col12">
+					<nav class="nav-collapse">
+						<ul>
+							<li><a href="home.html">Service Requests</a></li>
+							<li><a href="employees.html">Employees</a></li>
+							<li><a href="properties.html">Properties</a></li>
+							<li><a href="tenant_search.html" class="active">Tenant Search</a></li>
+							<li><a href="reports.html">Reports</a></li>
+							<li><a href="payroll.html">Payroll</a></li>
+						</ul>
+					</nav>
+				</div> <!-- /col12 -->
+			</div> <!-- /row -->
+		</div> <!-- /container -->
+		</div> <!-- /nav-bar -->
+
+	</header>
+
+	<div class="container">
+	<div class="row page-content">
+
+		<div class="row page-header">
+			<div class="col6"><h2>The Jones Law Firm</h2></div>
+			<div class="col6 text-right">
+				<a href="property_detail.html"><button class="button">&laquo; Back to Property</button></a>
+				<a data-remodal-target="modal"><button class="button primary">Edit Tenant</button></a>
+			</div>
+		</div>
+
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Contact Name</th>
+					<th>Phone</th>
+					<th>Extension</th>
+					<th>Mobile Phone</th>
+					<th>Password</th>
+					<th>Lease Starts</th>
+					<th>Lease Ends</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>Ramona Flowers</td>
+					<td>(214) 254-8458</td>
+					<td>x.100</td>
+					<td>(214) 254-8458</td>
+					<td><strong>benttree</strong></td>
+					<td>January 18, 2012</td>
+					<td>January 18, 2022</td>
+				</tr>
+
+			</tbody>
+		</table>
+
+		<h4>Service Request History</h4>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>WO#</th>
+					<th>Status</th>
+					<th>Property</th>
+					<th>Unit</th>
+					<th>Submitted</th>
+					<th>Category</th>
+					<th>Dispatched to</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td><a href="request_detail.html">23449</a></td>
+					<td>In Progress</td>
+					<td><a href="property_detail.html">Josey Lane</a></td>
+					<td>100</td>
+					<td>25 minutes ago</td>
+					<td>HVAC</td>
+					<td>Chris Yates</td>
+				</tr>
+
+				<tr>
+					<td><a href="request_detail.html">23449</a></td>
+					<td>Complete</td>
+					<td><a href="property_detail.html">Josey Lane</a></td>
+					<td>100</td>
+					<td>2 months ago</td>
+					<td>HVAC</td>
+					<td>Chris Yates</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+	</div> <!-- /row page-content -->
+	</div> <!-- /container -->
+
+	<!-- ADD MODAL FOR ADD NEW FORM -->
+	<div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+	  <button data-remodal-action="close" class="remodal-close"></button>
+	  <h3>Edit Property</h3>
+			  <form method="post" action="" id="add-service-contract-form">
+
+					<div class="col12">
+			  		<label for="name">Name:</label>
+			  		<input type="text" name="name" class="form-control" value="17000">
+			  	</div>
+
+			  	<div class="col6">
+				  	<label for="owner">Owner:</label>
+			  		<select class="form-control" name="owner">
+			  			<option value="">~Choose Owner</option>
+			  		</select>
+			  	</div>
+
+			  	<div class="col6">
+			  		<label for="type">Property Type:</label>
+			  		<select class="form-control" name="type">
+			  			<option value="">~Choose Type</option>
+			  		</select>
+			  	</div>
+
+			  	<div class="col6">
+			  		<label for="address">Address:</label>
+			  		<input type="text" name="address" class="form-control" value="16990 N. Dallas Parkway">
+			  	</div>
+
+			  	<div class="col6">
+			  		<label for="address2">Address 2:</label>
+			  		<input type="text" name="address2" class="form-control" value="">
+			  	</div>
+
+			  	<div class="col4">
+			  		<label for="city">City:</label>
+			  		<input type="text" name="city" class="form-control" value="Dallas">
+			  	</div>
+
+			  	<div class="col4">
+			  		<label for="state">State:</label>
+			  		<input type="text" name="state" class="form-control" value="TX">
+			  	</div>
+
+			  	<div class="col4">
+			  		<label for="zip">Zip:</label>
+			  		<input type="text" name="zip" class="form-control" value="75248">
+			  	</div>
+
+			  	<div class="col12">
+			  		<label for="emails">Email Distribution list:</label>
+			  		<textarea name="emails" class="form-control">admin@majesticrealty.net, paul@majesticrealty.net, rena@majesticrealty.net, Jennifer@majesticrealty.net</textarea>
+			  	</div>
+
+			  	<div class="col12">
+			  		<input type="submit" data-remodal-action="confirm" class="button primary large remodal-confirm">
+			  	</div>
+
+			  </form>
+	</div>
+
+	<!-- ADD MODAL FOR ADD NEW FORM -->
+	<div class="remodal" data-remodal-id="unit" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+	  <button data-remodal-action="close" class="remodal-close"></button>
+	  <h3>Edit Unit</h3>
+			  <form method="post" action="" id="add-service-contract-form">
+
+
+			  	<div class="col6">
+				  	<label for="unit">Unit Number:</label>
+			  		<input type="text" name="unit" class="form-control" value="100">
+			  	</div>
+
+			  	<div class="col6">
+			  		<label for="description">Description:</label>
+			  		<input type="text" name="description" class="form-control" value="SUITE">
+			  	</div>
+
+			  	<div class="col4">
+			  		<label for="sqft">SqFt:</label>
+			  		<input type="text" name="sqft" class="form-control" value="1735">
+			  	</div>
+
+			  	<div class="col4">
+			  		<label for="bedrooms">Bedrooms:</label>
+			  		<input type="text" name="bedrooms" class="form-control" value="">
+			  	</div>
+
+			  	<div class="col4">
+			  		<label for="bathrooms">Bathrooms:</label>
+			  		<input type="text" name="bathrooms" class="form-control" value="">
+			  	</div>
+
+			  	<div class="col12">
+			  		<input type="submit" value="Save" data-remodal-action="confirm" class="button primary large remodal-confirm">
+			  	</div>
+
+			  </form>
+	</div>
+
+	<footer>
+		&copy; Copyright Things.</div>
+	</footer>
+
+	<script src="js/vendor/jquery-2.1.1.min.js"></script>
+	<script src="js/vendor/responsive-nav.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script src="js/vendor/jquery.backstretch.min.js"></script>
+	<script src="js/vendor/remodal.min.js"></script>
+
+
+	<script type="text/javascript">
+		$(".top-banner").backstretch("img/banners/toronto-buildings.jpg");
+	</script>
+
+</div> <!-- /remodal-bg -->
+</body>
+
+</html>
