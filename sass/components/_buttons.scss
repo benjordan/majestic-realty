@@ -33,7 +33,7 @@
     }
   }
 
-  @include button-theme($dark_grey);
+  @include button-theme($medium-grey);
 
   &.primary {
     @include button-theme($red);
@@ -62,9 +62,14 @@
     color: $red;
     padding: 10px 20px;
 
+    &.success {
+      color: $green;
+      border: 2px solid $green;
+    }
+
     a {
       @include primary_font;
-      color: $green;
+      color: $red;
       font-weight: 500;
 
       &:hover {
@@ -75,7 +80,7 @@
     }
 
     &:hover {
-      background-color: $green;
+      background-color: $red;
       color: white;
     }
   }
@@ -87,6 +92,8 @@
 
   &.small {
     padding: 5px 10px;
+    font-size: 10px;
+    font-weight: 600;
   }
 
   &.extra-small {
@@ -98,6 +105,10 @@
   &.fullwide {
     width: 100%;
     display: block;
+  }
+
+  &.inline {
+    margin: 32px 10px 0 10px;
   }
 
 }

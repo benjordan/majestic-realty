@@ -41,10 +41,10 @@
 				<div class="col12">
 					<nav class="nav-collapse">
 						<ul>
-							<li><a href="home.html" class="active">Service Requests</a></li>
+							<li><a href="home.html">Service Requests</a></li>
 							<li><a href="employees.html">Employees</a></li>
 							<li><a href="properties.html">Properties</a></li>
-							<li><a href="tenant_search.html">Tenant Search</a></li>
+							<li><a href="tenant_search.html" class="active">Tenant Search</a></li>
 							<li><a href="reports.html">Reports</a></li>
 							<li><a href="payroll.html">Payroll</a></li>
 						</ul>
@@ -60,176 +60,75 @@
 	<div class="row page-content">
 
 		<div class="row page-header">
-			<div class="col6"><h2>Service Requests</h2></div>
-			<div class="col6 text-right"><a data-remodal-target="modal"><button class="button primary">Add New</button></a></div>
+			<div class="col6"><h2>Search Tenants</h2></div>
 		</div>
 
 		<div class="filter-search-bar">
-			<div class="row">
 
-				<div class="col2">
-					<label for="wo_status">Work Order Status</label>
-					<select class="form-control" name="wo_status"><option value="">~ Select</option></select>
+			<form class="row">
+				<div class="col8">
+					<label>Search</label>
+					<input type="search" name="tenant_search" placeholder="Search for tenant..." class="form-control">
 				</div>
-
-				<div class="col3">
-					<label for="property_name">Property Name</label>
-					<select class="form-control" name="property_name"><option value="">~ Select</option></select>
+				<div class="col4">
+					<input type="submit" value="Search" class="button primary inline">
 				</div>
-
-				<div class="col3">
-					<label for="employee">Employee</label>
-					<select class="form-control" name="employee"><option value="">~ Select</option></select>
-				</div>
-
-				<div class="col2">
-					<label for="date_range">Date Range</label>
-					<input type="date" name="date_range">
-				</div>
-
-				<div class="col2">
-					<label for="tenant">Tenant Name</label>
-					<input type="text" name="tenant">
-				</div>
-
-			</div>
+			</form>
 
 		</div>
 
+		<h4>Results for Search Term: "Mike"</h4>
 		<table class="table">
 			<thead>
 				<tr>
-					<th>WO#</th>
+					<th>Tenant/Resident</th>
 					<th>Property</th>
 					<th>Unit</th>
-					<th>Tenant</th>
-					<th>Submitted</th>
-					<th>Category</th>
-					<th>Status</th>
-					<th>Dispatched to</th>
+					<th>Phone</th>
+					<th>Mobile</th>
+					<th>Email</th>
+					<th width="100">Actions</th>
 				</tr>
 			</thead>
 
 			<tbody>
 				<tr>
-					<td><a href="request_detail.html">23449</a></td>
-					<td><a href="property_detail.html">Josey Lane</a></td>
-					<td>224</td>
-					<td><a href="tenant_detail.html">King Institute</a></td>
-					<td>25 minutes ago</td>
-					<td>HVAC</td>
-					<td>In Progress</td>
-					<td>Chris Yates</td>
-
+					<td><a href="tenant_detail.html">Mike Geter</a></td>
+					<td><a href="property_detail.html">Regional</a></td>
+					<td>125</td>
+					<td>(214) 692-8891</td>
+					<td>(214) 512-8965</td>
+					<td>mike@mikegeter.com</td>
+					<td><a href=""><button class="button ghost small">Delete</button></a></td>
 				</tr>
-
 				<tr>
-					<td><a href="request_detail.html">23449</a></td>
-					<td><a href="property_detail.html">Josey Lane</a></td>
-					<td>224</td>
-					<td><a href="tenant_detail.html">King Institute</a></td>
-					<td>25 minutes ago</td>
-					<td>HVAC</td>
-					<td>In Progress</td>
-					<td>Chris Yates</td>
-
+					<td><a href="tenant_detail.html">Mike Geter</a></td>
+					<td><a href="property_detail.html">Regional</a></td>
+					<td>125</td>
+					<td>(214) 692-8891</td>
+					<td>(214) 512-8965</td>
+					<td>mike@mikegeter.com</td>
+					<td><a href=""><button class="button ghost small">Delete</button></a></td>
 				</tr>
-
 				<tr>
-					<td><a href="request_detail.html">23449</a></td>
-					<td><a href="property_detail.html">Josey Lane</a></td>
-					<td>224</td>
-					<td><a href="tenant_detail.html">King Institute</a></td>
-					<td>25 minutes ago</td>
-					<td>HVAC</td>
-					<td>In Progress</td>
-					<td>Chris Yates</td>
-
+					<td><a href="tenant_detail.html">Mike Geter</a></td>
+					<td><a href="property_detail.html">Regional</a></td>
+					<td>125</td>
+					<td>(214) 692-8891</td>
+					<td>(214) 512-8965</td>
+					<td>mike@mikegeter.com</td>
+					<td><a href=""><button class="button ghost small">Delete</button></a></td>
 				</tr>
-
 				<tr>
-					<td><a href="request_detail.html">23449</a></td>
-					<td><a href="property_detail.html">Josey Lane</a></td>
-					<td>224</td>
-					<td><a href="tenant_detail.html">King Institute</a></td>
-					<td>25 minutes ago</td>
-					<td>HVAC</td>
-					<td>In Progress</td>
-					<td>Chris Yates</td>
-
+					<td><a href="tenant_detail.html">Mike Geter</a></td>
+					<td><a href="property_detail.html">Regional</a></td>
+					<td>125</td>
+					<td>(214) 692-8891</td>
+					<td>(214) 512-8965</td>
+					<td>mike@mikegeter.com</td>
+					<td><a href=""><button class="button ghost small">Delete</button></a></td>
 				</tr>
 
-				<tr>
-					<td><a href="request_detail.html">23449</a></td>
-					<td><a href="property_detail.html">Josey Lane</a></td>
-					<td>224</td>
-					<td><a href="tenant_detail.html">King Institute</a></td>
-					<td>25 minutes ago</td>
-					<td>HVAC</td>
-					<td>In Progress</td>
-					<td>Chris Yates</td>
-
-				</tr>
-
-				<tr>
-					<td><a href="request_detail.html">23449</a></td>
-					<td><a href="property_detail.html">Josey Lane</a></td>
-					<td>224</td>
-					<td><a href="tenant_detail.html">King Institute</a></td>
-					<td>25 minutes ago</td>
-					<td>HVAC</td>
-					<td>In Progress</td>
-					<td>Chris Yates</td>
-
-				</tr>
-
-				<tr>
-					<td><a href="request_detail.html">23449</a></td>
-					<td><a href="property_detail.html">Josey Lane</a></td>
-					<td>224</td>
-					<td><a href="tenant_detail.html">King Institute</a></td>
-					<td>25 minutes ago</td>
-					<td>HVAC</td>
-					<td>In Progress</td>
-					<td>Chris Yates</td>
-
-				</tr>
-
-				<tr>
-					<td><a href="request_detail.html">23449</a></td>
-					<td><a href="property_detail.html">Josey Lane</a></td>
-					<td>224</td>
-					<td><a href="tenant_detail.html">King Institute</a></td>
-					<td>25 minutes ago</td>
-					<td>HVAC</td>
-					<td>In Progress</td>
-					<td>Chris Yates</td>
-
-				</tr>
-
-				<tr>
-					<td><a href="request_detail.html">23449</a></td>
-					<td><a href="property_detail.html">Josey Lane</a></td>
-					<td>224</td>
-					<td><a href="tenant_detail.html">King Institute</a></td>
-					<td>25 minutes ago</td>
-					<td>HVAC</td>
-					<td>In Progress</td>
-					<td>Chris Yates</td>
-
-				</tr>
-
-				<tr>
-					<td><a href="request_detail.html">23449</a></td>
-					<td><a href="property_detail.html">Josey Lane</a></td>
-					<td>224</td>
-					<td><a href="tenant_detail.html">King Institute</a></td>
-					<td>25 minutes ago</td>
-					<td>HVAC</td>
-					<td>In Progress</td>
-					<td>Chris Yates</td>
-
-				</tr>
 			</tbody>
 		</table>
 
