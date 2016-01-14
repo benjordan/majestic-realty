@@ -1,0 +1,30 @@
+// Styles for Alerts - Managed in /theme/sass/snippets/_alerts.scss
+
+.alert {
+  @include border-radius(2px);
+  font-size: 14px;
+  padding: 10px 15px;
+  margin: 10px 0 20px 0;
+  border: 1px solid transparent;
+  text-align: center;
+
+  @include alert-theme($dark_grey);
+
+  &.success {
+    @include alert-theme($green);
+  }
+
+  &.warning {
+    @include alert-theme($orange);
+  }
+
+  &.danger {
+    @include alert-theme($red);
+  }
+
+  &.disabled {
+    @include alert-theme($light-grey);
+    color: $medium-grey;
+  }
+
+}

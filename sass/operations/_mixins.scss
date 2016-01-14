@@ -31,7 +31,7 @@
 @mixin alert-theme($alert-color) {
 
   border-color: $alert-color;
-  background-color: lighten($alert-color, 50%);
+  background-color: rgba($alert-color, 0.4);
   color: $alert-color;
 
 }
