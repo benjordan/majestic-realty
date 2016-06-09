@@ -184,7 +184,6 @@ table {
   background-color: transparent;
   border-collapse: collapse;
   border-spacing: 0;
-  @include box-shadow (1px 0 0 $neutral5 inset, -1px 0 0 $neutral5 inset, 0 -1px 0 $neutral5 inset);
 }
 
 th {
@@ -195,7 +194,6 @@ th {
 .table {
   width: 100%;
   margin-bottom: 40px;
-  @include box-shadow (1px 0 0 $neutral5 inset, -1px 0 0 $neutral5 inset, 0 -1px 0 $neutral5 inset);
 }
 
 
@@ -208,7 +206,6 @@ th {
 	font-weight: 300;
 	letter-spacing: .15em;
 	text-transform: uppercase;
-	@include text-shadow(0 1px 2px rgba(255,255,255,1));
 }
 
 .table thead > tr > th,
@@ -262,14 +259,6 @@ th {
 
 .table > tbody > tr.selected > td {
 	background-color: inherit;
-
-	&:first-child {
-		@include box-shadow (5px 0 0 $neutral4 inset);
-	}
-	&:last-child {
-	  	@include box-shadow (-1px 0 0 $neutral5 inset);
-  	}
-
 }
 
 .table-hover > tbody > tr:hover > td,

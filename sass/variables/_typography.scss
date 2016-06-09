@@ -175,7 +175,6 @@ dd {
 }
 
 a {
-	@include transition (all .1s ease-in-out);
 	color: $link;
 	text-decoration: none;
 	position: relative;

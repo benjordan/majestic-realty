@@ -1,7 +1,7 @@
 // Styles for Buttons - Managed in /sass/snippets/_buttons.scss
 
 .button {
-  @include border-radius(2px);
+  border-radius: 2px;
   @include primary_font;
   margin-bottom: 0;
   font-weight: 400;

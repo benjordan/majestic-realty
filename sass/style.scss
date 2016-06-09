@@ -1,8 +1,3 @@
-// Use Compass, save time
-@import "compass";
-@import "compass/layout/stretching";
-
-
 // Operations
 @import "operations/mixins";
 @import "operations/functions";
@@ -20,7 +15,7 @@
 @import "components/all";
 
 *, *:before, *:after {
-	@include box-sizing (border-box);
+	box-sizing: border-box;
 }
 
 .block {

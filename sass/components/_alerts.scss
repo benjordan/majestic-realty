@@ -1,7 +1,7 @@
 // Styles for Alerts - Managed in /theme/sass/snippets/_alerts.scss
 
 .alert {
-  @include border-radius(2px);
+  border-radius: 2px;
   font-size: 14px;
   padding: 10px 15px;
   margin: 10px 0 20px 0;
