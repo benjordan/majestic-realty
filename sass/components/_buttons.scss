@@ -22,6 +22,11 @@
   display: inline-block;
   padding: 10px 20px;
   font-size: 0.825em;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 
   a {
     @include primary_font;
@@ -65,6 +70,10 @@
     &.success {
       color: $green;
       border: 2px solid $green;
+
+      &:hover {
+        background-color: $green;
+      }
     }
 
     a {

@@ -44,7 +44,7 @@
 							<li><a href="home.html">Service Requests</a></li>
 							<li><a href="employees.html">Employees</a></li>
 							<li><a href="properties.html">Properties</a></li>
-							<li><a href="tenant_search.html" class="active">Tenant Search</a></li>
+							<li><a href="tenants.html" class="active">Tenants</a></li>
 							<li><a href="reports.html">Reports</a></li>
 							<li><a href="payroll.html">Payroll</a></li>
 						</ul>
@@ -63,7 +63,7 @@
 			<div class="col6"><h2>The Jones Law Firm</h2></div>
 			<div class="col6 text-right">
 				<a href="property_detail.html"><button class="button">&laquo; Back to Property</button></a>
-				<a data-remodal-target="modal"><button class="button primary">Edit Tenant</button></a>
+				<a data-remodal-target="tenant"><button class="button primary">Edit Tenant</button></a>
 			</div>
 		</div>
 
@@ -137,69 +137,60 @@
 	</div> <!-- /row page-content -->
 	</div> <!-- /container -->
 
-	<!-- ADD MODAL FOR ADD NEW FORM -->
-	<div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+	<!-- MODAL: EDIT TENANT -->
+	<div class="remodal" data-remodal-id="tenant" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
 	  <button data-remodal-action="close" class="remodal-close"></button>
-	  <h3>Edit Property</h3>
-			  <form method="post" action="" id="add-service-contract-form">
+	  <h3>Edit Tenant</h3>
+	  <form method="post" action="" id="add-service-contract-form">
 
-					<div class="col12">
-			  		<label for="name">Name:</label>
-			  		<input type="text" name="name" class="form-control" value="17000">
-			  	</div>
+			<div class="col12">
+	  		<label for="field-name">Name:</label>
+	  		<input type="text" name="field-name" class="form-control" value="The Jones Law Firm">
+	  	</div>
 
-			  	<div class="col6">
-				  	<label for="owner">Owner:</label>
-			  		<select class="form-control" name="owner">
-			  			<option value="">~Choose Owner</option>
-			  		</select>
-			  	</div>
+	  	<div class="col6">
+		  	<label for="field-name">Contact Name:</label>
+	  		<input type="text" name="field-name" class="form-control" value="Ramona Flower">
+	  	</div>
 
-			  	<div class="col6">
-			  		<label for="type">Property Type:</label>
-			  		<select class="form-control" name="type">
-			  			<option value="">~Choose Type</option>
-			  		</select>
-			  	</div>
+	  	<div class="col6">
+		  	<label for="field-name">Phone:</label>
+	  		<input type="text" name="field-name" class="form-control" value="(214) 254-8458">
+	  	</div>
 
-			  	<div class="col6">
-			  		<label for="address">Address:</label>
-			  		<input type="text" name="address" class="form-control" value="16990 N. Dallas Parkway">
-			  	</div>
+	  	<div class="col6">
+		  	<label for="field-name">Extension:</label>
+	  		<input type="text" name="field-name" class="form-control" value="x.100">
+	  	</div>
 
-			  	<div class="col6">
-			  		<label for="address2">Address 2:</label>
-			  		<input type="text" name="address2" class="form-control" value="">
-			  	</div>
+	  	<div class="col6">
+		  	<label for="field-name">Mobile Phone:</label>
+	  		<input type="text" name="field-name" class="form-control" value="(214) 254-8458">
+	  	</div>
 
-			  	<div class="col4">
-			  		<label for="city">City:</label>
-			  		<input type="text" name="city" class="form-control" value="Dallas">
-			  	</div>
+	  	<div class="col6">
+		  	<label for="field-name">Password:</label>
+	  		<input type="text" name="field-name" class="form-control" value="benttree">
+	  	</div>
 
-			  	<div class="col4">
-			  		<label for="state">State:</label>
-			  		<input type="text" name="state" class="form-control" value="TX">
-			  	</div>
+			<div class="col6">
+		  	<label for="field-name">Lease Start:</label>
+	  		<input type="text" name="field-name" class="form-control" value="January 18, 2012">
+	  	</div>
 
-			  	<div class="col4">
-			  		<label for="zip">Zip:</label>
-			  		<input type="text" name="zip" class="form-control" value="75248">
-			  	</div>
+	  	<div class="col6">
+		  	<label for="field-name">Lease End:</label>
+	  		<input type="text" name="field-name" class="form-control" value="January 18, 2022">
+	  	</div>
 
-			  	<div class="col12">
-			  		<label for="emails">Email Distribution list:</label>
-			  		<textarea name="emails" class="form-control">admin@majesticrealty.net, paul@majesticrealty.net, rena@majesticrealty.net, Jennifer@majesticrealty.net</textarea>
-			  	</div>
+	  	<div class="col12">
+	  		<input type="submit" data-remodal-action="confirm" class="button primary large remodal-confirm">
+	  	</div>
 
-			  	<div class="col12">
-			  		<input type="submit" data-remodal-action="confirm" class="button primary large remodal-confirm">
-			  	</div>
-
-			  </form>
+	  </form>
 	</div>
 
-	<!-- ADD MODAL FOR ADD NEW FORM -->
+	<!-- MODAL: EDIT UNIT -->
 	<div class="remodal" data-remodal-id="unit" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
 	  <button data-remodal-action="close" class="remodal-close"></button>
 	  <h3>Edit Unit</h3>

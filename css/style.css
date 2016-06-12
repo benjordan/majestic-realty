@@ -260,6 +260,11 @@ body.account {
   padding: 15px;
   background-color: #F0F0F0;
   margin-bottom: 20px; }
+  .filter-search-bar .filter-button {
+    padding-top: 30px; }
+    .filter-search-bar .filter-button .button {
+      width: 100%;
+      height: 40px; }
 
 .details-box {
   padding: 20px;
@@ -1298,6 +1303,11 @@ a.thumbnail:focus {
   display: inline-block;
   padding: 10px 20px;
   font-size: 0.825em;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
   border-color: transparent;
   background-color: #82827d; }
   .button a {
@@ -1354,6 +1364,8 @@ a.thumbnail:focus {
     .button.ghost.success {
       color: #0f9d58;
       border: 2px solid #0f9d58; }
+      .button.ghost.success:hover {
+        background-color: #0f9d58; }
     .button.ghost a {
       font-family: 'Open Sans', sans-serif;
       color: #B43C3C;
@@ -2245,7 +2257,12 @@ header {
       padding: 0 40px;
       height: 60px;
       line-height: 60px;
-      background-color: rgba(255, 255, 255, 0.1); }
+      background-color: rgba(255, 255, 255, 0.1);
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
       .nav-collapse li a:hover {
         background-color: rgba(255, 255, 255, 0.2); }
       .nav-collapse li a.active {
