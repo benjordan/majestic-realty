@@ -60,13 +60,14 @@
 	<div class="container">
 	<div class="row page-content">
 
-		<div class="row page-header">
-			<div class="col6"><h2>Timesheet</h2></div>
+		<div class="col12 page-header">
+			<h2>Timesheet</h2>
+			<h4>Pay Period: Jun 18, 2016 - June 30, 2016</h4>
 		</div>
 
-		<div class="row">
-			<form>
-				<div class="col8">
+		<div class="col12 page-section">
+			<div class="row">
+				<div class="col6">
 					<label>Select Employee</label>
 					<div class="select-style">
 						<select name="employee_select" class="form-control">
@@ -82,16 +83,15 @@
 						</select>
 					</div>
 				</div>
-				<div class="col4 text-right">
-					<label></label>
-					<a data-remodal-target="log"><button class="button primary large">Add New Log</button></a>
-				</div>
-			</form>
+			</div>
 		</div>
+
 		<hr>
-		<div class="row">
-			<div class="col12"><h4>Add Time Off</h4></div>
-			<form>
+
+		<div class="col12 page-section">
+			<h4>Add Time Off</h4>
+
+			<div class="row">
 			<div class="col3">
 				<label>Request Type</label>
 				<div class="select-style">
@@ -100,68 +100,13 @@
 						<option value="SIC">Sick Leave</option>
 						<option value="VAC">Vacation</option>
 					</select>
-				</div>
-			</div>
+				</div> <!-- /select-style -->
+			</div> <!-- /col3 -->
 
 			<div class="col3">
-				<label>Month</label>
-				<div class="select-style">
-					<select name="month" id="month" onchange="" size="1">
-					    <option value="01">January</option>
-					    <option value="02">February</option>
-					    <option value="03">March</option>
-					    <option value="04">April</option>
-					    <option value="05">May</option>
-					    <option value="06">June</option>
-					    <option value="07">July</option>
-					    <option value="08">August</option>
-					    <option value="09">September</option>
-					    <option value="10">October</option>
-					    <option value="11">November</option>
-					    <option value="12">December</option>
-					</select>
-				</div>
-			</div>
-
-			<div class="col2">
-				<label>Day</label>
-				<div class="select-style">
-					<select name="ddlDay" id="ddlDay">
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-						<option value="9">9</option>
-						<option value="10">10</option>
-						<option value="11">11</option>
-						<option value="12">12</option>
-						<option value="13">13</option>
-						<option value="14">14</option>
-						<option value="15">15</option>
-						<option value="16">16</option>
-						<option value="17">17</option>
-						<option value="18">18</option>
-						<option value="19">19</option>
-						<option value="20">20</option>
-						<option value="21">21</option>
-						<option value="22">22</option>
-						<option value="23">23</option>
-						<option value="24">24</option>
-						<option value="25">25</option>
-						<option value="26">26</option>
-						<option value="27">27</option>
-						<option value="28">28</option>
-						<option value="29">29</option>
-						<option value="30">30</option>
-						<option value="31">31</option>
-
-					</select>
-				</div>
-			</div>
+				<label>Date</label>
+				<input type="date" name="date">
+			</div> <!-- /col3 -->
 
 			<div class="col2">
 				<label>Hours Requested</label>
@@ -171,69 +116,168 @@
 						<option value="2">2</option>
 						<option value="3">3</option>
 						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
 					</select>
-				</div>
-			</div>
+				</div> <!-- /select-style -->
+			</div> <!-- /col2 -->
 
-			<div class="col1">
+			<div class="col2">
 				<a href=""><button class="button primary inline">Submit</button></a>
-			</div>
-
-			</form>
-		</div>
-
+			</div> <!-- /col2 -->
+		</div> <!-- /row -->
+		</div> <!-- /col12 -->
 		<hr>
 
-		<div class="row page-header">
-		<div class="col12">
-		<h4>Time Log</h4>
-		<table class="table">
-			<thead>
-			<tr>
-				<th scope="col">Property</th><th scope="col">Clock In</th><th scope="col">Clock Out</th><th scope="col">Hours</th><th scope="col">Approved</th><th scope="col">Mobile Entry</th><th scope="col" style="width:25px;">&nbsp;</th>
-			</tr>
-		</thead>
-		<tbody>
-		<tr>
-			<td>London Square</td><td>5/23/2016 8:26 AM</td><td>5/23/2016 9:10 AM</td><td>0.73</td><td>Yes</td><td>Yes</td><td><a href="">View</a></td>
-		</tr>
-		<tr class="alt">
-			<td>One Preston Park</td><td>5/23/2016 9:10 AM</td><td>5/23/2016 10:10 AM</td><td>1</td><td>Yes</td><td>Yes</td><td><a href="">View</a></td>
-		</tr>
-		<tr>
-			<td>Twin Creeks Medical Ctr One</td><td>5/23/2016 10:10 AM</td><td>5/23/2016 11:14 AM</td><td>1.07</td><td>Yes</td><td>Yes</td><td><a href="">View</a></td>
-		</tr>
-		<tr class="alt">
-			<td>Legacy</td><td>5/23/2016 11:14 AM</td><td>5/23/2016 12:56 PM</td><td>1.7</td><td>Yes</td><td>Yes</td><td><a href="">View</a></td>
-		</tr>
-		<tr>
-			<td>London Square</td><td>5/23/2016 12:56 PM</td><td>5/23/2016 3:03 PM</td><td>2.12</td><td>Yes</td><td>Yes</td><td><a href="">View</a></td>
-		</tr>
-		<tr class="alt">
-			<td>LS Retail Center</td><td>5/23/2016 3:04 PM</td><td>5/23/2016 3:44 PM</td><td>0.67</td><td>Yes</td><td>Yes</td><td><a href="">View</a></td>
-		</tr>
-		<tr>
-			<td>Coit Park</td><td>5/23/2016 3:44 PM</td><td>5/23/2016 4:31 PM</td><td>0.78</td><td>Yes</td><td>Yes</td><td><a href="">View</a></td>
-		</tr>
-		<tr class="alt">
-			<td>Parker</td><td>5/23/2016 4:31 PM</td><td>5/23/2016 5:10 PM</td><td>0.65</td><td>Yes</td><td>Yes</td><td><a href="">View</a></td>
-		</tr>
-		<tr>
-			<td>Josey Lane</td><td>5/24/2016 8:27 AM</td><td>5/24/2016 10:14 AM</td><td>1.78</td><td>Yes</td><td>Yes</td><td><a href="">View</a></td>
-		</tr>
-		<tr class="alt">
-			<td>MYCON Center</td><td>5/24/2016 10:14 AM</td><td>5/24/2016 10:14 AM</td><td>0</td><td>Yes</td><td>Yes</td><td><a href="">View</a></td>
-		</tr>
-		<tr>
-			<td>MYCON Center</td><td>5/24/2016 10:14 AM</td><td>5/24/2016 11:45 AM</td><td>1.52</td><td>Yes</td><td>Yes</td><td><a href="">View</a></td>
-		</tr>
-		<tr class="alt">
-			<td>London Square</td><td>5/24/2016 11:46 AM</td><td>5/24/2016 2:25 PM</td><td>2.65</td><td>Yes</td><td>Yes</td><td><a href="">View</a></td>
-		</tr>
-	</tbody>
-		</table>
-		</div>
-		</div>
+		<div class="col12 page-section">
+			<div class="row">
+			<div class="col8"><h4>Time Log</h4></div>
+			<div class="col4 text-right">
+				<a href=""><button class="button primary small">Approve All</button></a>
+				<a data-remodal-target="log"><button class="button primary small">Add New Log</button></a>
+			</div>
+			<div class="col12">
+				<table class="table">
+					<thead>
+					<tr>
+						<th>Property</th>
+						<th>Clock In</th>
+						<th>Clock Out</th>
+						<th>Hours</th>
+						<th>Approved</th>
+						<th>Mobile Entry</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>London Square</td>
+					<td>5/23/2016 8:26 AM</td>
+					<td>5/23/2016 9:10 AM</td>
+					<td>0.73</td>
+					<td>No</td>
+					<td>Yes</td>
+					<td><a href="">Approve</a></td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr class="alt">
+					<td>One Preston Park</td>
+					<td>5/23/2016 9:10 AM</td>
+					<td>5/23/2016 10:10 AM</td>
+					<td>1</td>
+					<td>No</td>
+					<td>Yes</td>
+					<td><a href="">Approve</a></td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr>
+					<td>Twin Creeks Medical Ctr One</td>
+					<td>5/23/2016 10:10 AM</td>
+					<td>5/23/2016 11:14 AM</td>
+					<td>1.07</td>
+					<td>No</td>
+					<td>Yes</td>
+					<td><a href="">Approve</a></td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr class="alt">
+					<td>Legacy</td>
+					<td>5/23/2016 11:14 AM</td>
+					<td>5/23/2016 12:56 PM</td>
+					<td>1.7</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>--</td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr>
+					<td>London Square</td>
+					<td>5/23/2016 12:56 PM</td>
+					<td>5/23/2016 3:03 PM</td>
+					<td>2.12</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>--</td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr class="alt">
+					<td>LS Retail Center</td>
+					<td>5/23/2016 3:04 PM</td>
+					<td>5/23/2016 3:44 PM</td>
+					<td>0.67</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>--</td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr>
+					<td>Coit Park</td>
+					<td>5/23/2016 3:44 PM</td>
+					<td>5/23/2016 4:31 PM</td>
+					<td>0.78</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>--</td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr class="alt">
+					<td>Parker</td>
+					<td>5/23/2016 4:31 PM</td>
+					<td>5/23/2016 5:10 PM</td>
+					<td>0.65</td>
+					<td>No</td>
+					<td>Yes</td>
+					<td><a href="">Approve</a></td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr>
+					<td>Josey Lane</td>
+					<td>5/24/2016 8:27 AM</td>
+					<td>5/24/2016 10:14 AM</td>
+					<td>1.78</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>--</td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr class="alt">
+					<td>MYCON Center</td>
+					<td>5/24/2016 10:14 AM</td>
+					<td>5/24/2016 10:14 AM</td>
+					<td>0</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>--</td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr>
+					<td>MYCON Center</td>
+					<td>5/24/2016 10:14 AM</td>
+					<td>5/24/2016 11:45 AM</td>
+					<td>1.52</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>--</td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr class="alt">
+					<td>London Square</td>
+					<td>5/24/2016 11:46 AM</td>
+					<td>5/24/2016 2:25 PM</td>
+					<td>2.65</td>
+					<td>No</td>
+					<td>Yes</td>
+					<td>--</td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				</tbody>
+				</table>
+			</div> <!-- /col12 -->
+			</div>
+		</div> <!-- /page-section -->
 
 	</div> <!-- /row page-content -->
 	</div> <!-- /container -->
@@ -334,25 +378,27 @@
 			<div class="row">
 				<div class="col5">
 					<label>Employee:</label>
+					<div class="select-style">
 					<select name="dispatch" class="form-control">
 						<option value="">~ Select Employee</option>
 						<option value="Name">Employee Name</option>
 					</select>
+					</div>
 				</div>
 
 				<div class="col3">
 					<label>Date:</label>
-					<input type="date" name="date">
+					<input type="date" name="date" class="form-control">
 				</div>
 
 				<div class="col2">
 					<label>Start Time:</label>
-					<input type="time" name="start_time">
+					<input type="time" name="start_time" class="form-control">
 				</div>
 
 				<div class="col2">
 					<label>End Time:</label>
-					<input type="time" name="end_time">
+					<input type="time" name="end_time" class="form-control">
 				</div>
 			</div>
 
