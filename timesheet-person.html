@@ -1,0 +1,429 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Majestic Realty Portal</title>
+	<meta name="description" content="Workorder portal for Majestic Realty">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+	<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/s/dt/jqc-1.11.3,dt-1.10.10,r-2.0.0/datatables.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+<div class="remodal-bg">
+
+	<header>
+		<div class="top-banner"></div>
+		<div class="title-bar">
+		<div class="container">
+			<div class="row">
+				<div class="col8">
+					<div class="site-title">Majestic Realty Services, Inc.</div>
+				</div> <!-- /col8 -->
+
+				<div class="col4 account-block">
+					Welcome, User Name
+					<a href="index.html"><i class="fa fa-sign-out"></i></a>
+				</div>
+			</div> <!-- /row -->
+		</div> <!-- /container -->
+		</div> <!-- /title-bar -->
+
+		<div class="nav-bar">
+		<div class="container">
+			<div class="row">
+				<div class="col12">
+					<nav class="nav-collapse">
+						<ul>
+							<li><a href="home.html">Service Requests</a></li>
+							<li><a href="employees.html">Employees</a></li>
+							<li><a href="properties.html">Properties</a></li>
+							<li><a href="tenants.html">Tenants</a></li>
+							<li><a href="timesheet.html" class="active">Timesheet</a></li>
+							<li><a href="reports.html">Reports</a></li>
+							<li><a href="payroll.html">Payroll</a></li>
+						</ul>
+					</nav>
+				</div> <!-- /col12 -->
+			</div> <!-- /row -->
+		</div> <!-- /container -->
+		</div> <!-- /nav-bar -->
+
+	</header>
+
+	<div class="container">
+	<div class="row page-content">
+
+		<div class="col12 page-header">
+			<h2>Timesheet for Rodney Ragan</h2>
+			<h4>Pay Period: Jun 18, 2016 - June 30, 2016</h4>
+		</div>
+
+		<div class="col12 page-section">
+			<div class="row">
+				<div class="col6">
+					<label>Select Employee</label>
+					<div class="select-style">
+						<select name="employee_select" class="form-control">
+							<option value="">~ Select Employee</option>
+							<option value="6">Hernandez, Paul</option>
+							<option value="5">Ortega, Manuel</option>
+							<option value="44">Ragan, Rodney</option>
+							<option value="43">Segovia, Phil</option>
+							<option value="9">Sipes, Terry</option>
+							<option value="7">Tech, Tech</option>
+							<option value="36">Trevino, Roberto</option>
+							<option value="46">Vazquez, Efrain</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="col12 page-section">
+			<h4>Add Time Off</h4>
+
+			<div class="row">
+			<div class="col3">
+				<label>Request Type</label>
+				<div class="select-style">
+					<select name="ddlProperty" id="ddlProperty">
+						<option value="HOL">Holiday</option>
+						<option value="SIC">Sick Leave</option>
+						<option value="VAC">Vacation</option>
+					</select>
+				</div> <!-- /select-style -->
+			</div> <!-- /col3 -->
+
+			<div class="col3">
+				<label>Date</label>
+				<input type="date" name="date">
+			</div> <!-- /col3 -->
+
+			<div class="col2">
+				<label>Hours Requested</label>
+				<div class="select-style">
+					<select name="ddlProperty" id="ddlProperty">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+					</select>
+				</div> <!-- /select-style -->
+			</div> <!-- /col2 -->
+
+			<div class="col2">
+				<a href=""><button class="button primary inline">Submit</button></a>
+			</div> <!-- /col2 -->
+		</div> <!-- /row -->
+		</div> <!-- /col12 -->
+		<hr>
+
+		<div class="col12 page-section">
+			<div class="row">
+			<div class="col8"><h4>Time Log</h4></div>
+			<div class="col4 text-right">
+				<a href=""><button class="button primary small">Approve All</button></a>
+				<a data-remodal-target="log"><button class="button primary small">Add New Log</button></a>
+			</div>
+			<div class="col12">
+				<table class="table">
+					<thead>
+					<tr>
+						<th>Property</th>
+						<th>Clock In</th>
+						<th>Clock Out</th>
+						<th>Hours</th>
+						<th>Approved</th>
+						<th>Mobile Entry</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>London Square</td>
+					<td>5/23/2016 8:26 AM</td>
+					<td>5/23/2016 9:10 AM</td>
+					<td>0.73</td>
+					<td>No</td>
+					<td>Yes</td>
+					<td><a href="">Approve</a></td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr class="alt">
+					<td>One Preston Park</td>
+					<td>5/23/2016 9:10 AM</td>
+					<td>5/23/2016 10:10 AM</td>
+					<td>1</td>
+					<td>No</td>
+					<td>Yes</td>
+					<td><a href="">Approve</a></td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr>
+					<td>Twin Creeks Medical Ctr One</td>
+					<td>5/23/2016 10:10 AM</td>
+					<td>5/23/2016 11:14 AM</td>
+					<td>1.07</td>
+					<td>No</td>
+					<td>Yes</td>
+					<td><a href="">Approve</a></td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr class="alt">
+					<td>Legacy</td>
+					<td>5/23/2016 11:14 AM</td>
+					<td>5/23/2016 12:56 PM</td>
+					<td>1.7</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>--</td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr>
+					<td>London Square</td>
+					<td>5/23/2016 12:56 PM</td>
+					<td>5/23/2016 3:03 PM</td>
+					<td>2.12</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>--</td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr class="alt">
+					<td>LS Retail Center</td>
+					<td>5/23/2016 3:04 PM</td>
+					<td>5/23/2016 3:44 PM</td>
+					<td>0.67</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>--</td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr>
+					<td>Coit Park</td>
+					<td>5/23/2016 3:44 PM</td>
+					<td>5/23/2016 4:31 PM</td>
+					<td>0.78</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>--</td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr class="alt">
+					<td>Parker</td>
+					<td>5/23/2016 4:31 PM</td>
+					<td>5/23/2016 5:10 PM</td>
+					<td>0.65</td>
+					<td>No</td>
+					<td>Yes</td>
+					<td><a href="">Approve</a></td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr>
+					<td>Josey Lane</td>
+					<td>5/24/2016 8:27 AM</td>
+					<td>5/24/2016 10:14 AM</td>
+					<td>1.78</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>--</td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr class="alt">
+					<td>MYCON Center</td>
+					<td>5/24/2016 10:14 AM</td>
+					<td>5/24/2016 10:14 AM</td>
+					<td>0</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>--</td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr>
+					<td>MYCON Center</td>
+					<td>5/24/2016 10:14 AM</td>
+					<td>5/24/2016 11:45 AM</td>
+					<td>1.52</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>--</td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				<tr class="alt">
+					<td>London Square</td>
+					<td>5/24/2016 11:46 AM</td>
+					<td>5/24/2016 2:25 PM</td>
+					<td>2.65</td>
+					<td>No</td>
+					<td>Yes</td>
+					<td>--</td>
+					<td><a href="">Delete</a></td>
+				</tr>
+				</tbody>
+				</table>
+			</div> <!-- /col12 -->
+			</div>
+		</div> <!-- /page-section -->
+
+	</div> <!-- /row page-content -->
+	</div> <!-- /container -->
+
+	<!-- ADD MODAL FOR ADD NEW FORM -->
+	<div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+	  <button data-remodal-action="close" class="remodal-close"></button>
+	  <h3>Add Service Contract</h3>
+	  <form method="post" action="" id="add-service-contract-form">
+
+	  	<div class="form-options">
+	  		<div class="col3">
+		  		<label for="special_project">
+		  			<input type="checkbox"> Is special project?
+		  		</label>
+		  	</div>
+
+		  	<div class="col3">
+		  		<label for="permission">
+		  			<input type="checkbox"> Permission to enter
+		  		</label>
+		  	</div>
+
+		  	<div class="col3">
+		  		<label for="has_alarm">
+		  			<input type="checkbox"> Unit has alarm
+		  		</label>
+		  	</div>
+
+		  	<div class="col3">
+		  		<label for="has_pets">
+		  			<input type="checkbox"> Unit has pets
+		  		</label>
+		  	</div>
+	  	</div>
+
+	  	<div class="col4">
+		  	<label for="property">Property:</label>
+	  		<select class="form-control" name="property">
+	  			<option value="">~Choose Property</option>
+	  			<option value="1">17000</option>
+	  			<option value="2">Bamboo, Mesquite</option>
+	  		</select>
+	  	</div>
+
+	  	<div class="col4">
+	  		<label for="unit">Unit:</label>
+	  		<select class="form-control" name="property">
+	  			<option value="">~Choose Unit</option>
+	  			<option value="1">17000</option>
+	  			<option value="2">Bamboo, Mesquite</option>
+	  		</select>
+	  	</div>
+
+	  	<div class="col4">
+	  		<label for="request_category">Request Category:</label>
+	  		<select class="form-control" name="request_category">
+	  			<option value="">~Choose Unit</option>
+	  		</select>
+	  	</div>
+
+	  	<div class="col12">
+	  		<label for="tenant_name">Tenant Name:</label>
+	  		<input type="text" name="tenant_name" class="form-control">
+	  	</div>
+
+	  	<div class="col6">
+	  		<label for="email">Email <small>[Please update if incorrect]</small>:</label>
+	  		<input type="text" name="email" class="form-control">
+	  	</div>
+
+	  	<div class="col6">
+	  		<label for="phone">Phone <small>[Please update if incorrect]</small>:</label>
+	  		<input type="text" name="phone" class="form-control">
+	  	</div>
+
+	  	<div class="col12">
+	  		<label for="request_details">Request Detail:</label>
+	  		<textarea name="request_details"></textarea>
+	  	</div>
+
+	  	<div class="col12">
+	  		<input type="submit" data-remodal-action="confirm" class="button primary large remodal-confirm">
+	  	</div>
+
+	  </form>
+	</div>
+
+	<footer>
+		&copy; Copyright Things.</div>
+	</footer>
+
+	<!-- ADD MODAL FOR ADD NEW FORM -->
+	<div class="remodal" data-remodal-id="log" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
+	  <button data-remodal-action="close" class="remodal-close"></button>
+	  <h3>Add Maintenance Log</h3>
+	  <form method="post" action="" id="add-maintenance-log">
+			<div class="row">
+				<div class="col5">
+					<label>Employee:</label>
+					<div class="select-style">
+					<select name="dispatch" class="form-control">
+						<option value="">~ Select Employee</option>
+						<option value="Name">Employee Name</option>
+					</select>
+					</div>
+				</div>
+
+				<div class="col3">
+					<label>Date:</label>
+					<input type="date" name="date" class="form-control">
+				</div>
+
+				<div class="col2">
+					<label>Start Time:</label>
+					<input type="time" name="start_time" class="form-control">
+				</div>
+
+				<div class="col2">
+					<label>End Time:</label>
+					<input type="time" name="end_time" class="form-control">
+				</div>
+			</div>
+
+			<div class="row">
+		  	<div class="col12">
+		  		<input type="submit" data-remodal-action="confirm" class="button primary large remodal-confirm inline">
+		  	</div>
+	  	</div>
+
+	  </form>
+	</div>
+
+	<script src="js/vendor/jquery-2.1.1.min.js"></script>
+	<script src="js/vendor/responsive-nav.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script src="js/vendor/jquery.backstretch.min.js"></script>
+	<script src="js/vendor/remodal.min.js"></script>
+
+
+	<script type="text/javascript">
+		$(".top-banner").backstretch("img/banners/toronto-buildings.jpg");
+	</script>
+
+</div> <!-- /remodal-bg -->
+</body>
+
+</html>
