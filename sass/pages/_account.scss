@@ -26,7 +26,7 @@ body.account {
 		input[type="text"], input[type="email"], input[type="password"] {
 			@include primary_font;
 			color: white;
-			background: #333;
+			background: rgba(0,0,0,0.3);
 			border: none;
 			width: 100%;
 			padding: 10px 15px;
@@ -35,7 +35,7 @@ body.account {
 			margin-bottom: 20px;
 
 			&:focus {
-				background-color: #404040;
+				background-color: rgba(0,0,0,0.8);
 				outline: none;
 			}
 		}
@@ -77,5 +77,5 @@ body.account {
 }
 
 .backstretch {
-	opacity: 0.1;
+	opacity: 0.3;
 }

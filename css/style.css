@@ -217,7 +217,7 @@ body.account {
     body.account .form-holder input[type="text"], body.account .form-holder input[type="email"], body.account .form-holder input[type="password"] {
       font-family: 'Open Sans', sans-serif;
       color: white;
-      background: #333;
+      background: rgba(0, 0, 0, 0.3);
       border: none;
       width: 100%;
       padding: 10px 15px;
@@ -225,7 +225,7 @@ body.account {
       height: auto;
       margin-bottom: 20px; }
       body.account .form-holder input[type="text"]:focus, body.account .form-holder input[type="email"]:focus, body.account .form-holder input[type="password"]:focus {
-        background-color: #404040;
+        background-color: rgba(0, 0, 0, 0.8);
         outline: none; }
     body.account .form-holder .remember span {
       text-transform: none;
@@ -253,7 +253,7 @@ body.account {
   width: 100%; }
 
 .backstretch {
-  opacity: 0.1; }
+  opacity: 0.3; }
 
 .filter-search-bar {
   width: 100%;
@@ -2225,7 +2225,7 @@ header {
       color: #DCD8CD; }
       header .title-bar .account-block i {
         padding: 10px;
-        background-color: rgba(255, 255, 255, 0.3);
+        background-color: rgba(0, 0, 0, 0.3);
         margin-left: 5px;
         color: #DCD8CD; }
   header .nav-bar {
@@ -2287,14 +2287,14 @@ header {
       padding: 0 40px;
       height: 60px;
       line-height: 60px;
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: rgba(0, 0, 0, 0.5);
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       -ms-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s; }
       .nav-collapse li a:hover {
-        background-color: rgba(255, 255, 255, 0.2); }
+        background-color: rgba(0, 0, 0, 0.7); }
       .nav-collapse li a.active {
         background-color: white;
         color: #424243; } }
