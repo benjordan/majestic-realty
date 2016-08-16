@@ -19,19 +19,45 @@
   .top-banner {
     display: none; }
 
+  table {
+    font-size: 80%;
+    width: 100%;
+    max-width: 100%; }
+
+  th,
+  td {
+    padding: 10px 7px;
+    text-align: center; }
+
+  th {
+    border-bottom: 2px solid #333333; }
+
+  td {
+    border-bottom: 1px dotted #999999; }
+
+  tfoot td {
+    border-bottom-width: 0px;
+    border-top: 2px solid #333333;
+    padding-top: 20px; }
+
   h1, h2, h3, h4, h5, h6 {
     font-family: Helvetica, Arial, sans-serif;
-    color: #000; }
+    color: #000;
+    margin: 0;
+    padding: 0; }
 
   h1 {
     font-size: 250%;
     font-weight: 300; }
 
   h2 {
-    font-size: 175%; }
+    font-size: 175%;
+    margin-top: 5px;
+    margin-bottom: 15px; }
 
   h3 {
-    font-size: 135%; }
+    font-size: 115%;
+    font-weight: 300; }
 
   h4 {
     font-size: 100%;
@@ -44,12 +70,27 @@
     font-size: 90%;
     font-style: italic; }
 
+  .report-title {
+    width: 55%;
+    float: left; }
+
+  .run-date {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 75%;
+    font-weight: 300;
+    margin-bottom: 20px;
+    float: right;
+    width: 40%;
+    text-align: right;
+    margin-top: 20px; }
+
   a:link, a:visited {
     color: #00c;
     font-weight: bold;
     text-decoration: underline; }
 
-  #content a:link:after, #content a:visited:after {
+  a:link:after, a:visited:after {
     content: " (" attr(href) ") "; }
 
   @page {
