@@ -3,7 +3,7 @@
 /* BASE COLORS */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Source+Sans+Pro:300,400);
 .desaturate {
-  color: #787878 !important; }
+  color: #737373 !important; }
 
 small {
   font-size: 85%; }
@@ -21,7 +21,7 @@ cite {
   color: #f2bf51; }
 
 .text-danger {
-  color: #B43C3C; }
+  color: #bc2a47; }
 
 .text-success {
   color: #0f9d58; }
@@ -48,7 +48,7 @@ cite {
   color: #f2bf51; }
 
 .red {
-  color: #B43C3C; }
+  color: #bc2a47; }
 
 .blue {
   color: #75B6B8; }
@@ -160,7 +160,7 @@ dd {
   margin-left: 0; }
 
 a {
-  color: #B43C3C;
+  color: #bc2a47;
   text-decoration: none;
   position: relative;
   display: inline-block; }
@@ -171,7 +171,7 @@ a {
   a:hover {
     outline: 0;
     text-decoration: none;
-    color: #B43C3C; }
+    color: #bc2a47; }
 
 a.animated::after {
   position: absolute;
@@ -197,7 +197,7 @@ a.animated:focus::after {
 /* NEUTRALS */
 /* BASE COLORS */
 .desaturate {
-  color: #787878 !important; }
+  color: #737373 !important; }
 
 body.account {
   background-color: #111113;
@@ -319,9 +319,9 @@ body.account {
     background-color: rgba(240, 101, 47, 0.4);
     color: #f0652f; }
   .alert.danger {
-    border-color: #B43C3C;
-    background-color: rgba(180, 60, 60, 0.4);
-    color: #B43C3C; }
+    border-color: #bc2a47;
+    background-color: rgba(188, 42, 71, 0.4);
+    color: #bc2a47; }
   .alert.disabled {
     border-color: #d3d3d3;
     background-color: rgba(211, 211, 211, 0.4);
@@ -1338,11 +1338,11 @@ a.thumbnail:focus {
     background-color: #686864; }
   .button.primary {
     border-color: transparent;
-    background-color: #B43C3C; }
+    background-color: #bc2a47; }
     .button.primary:hover {
-      background-color: #8e2f2f; }
+      background-color: #922137; }
     .button.primary:active {
-      background-color: #8e2f2f; }
+      background-color: #922137; }
   .button.success {
     border-color: transparent;
     background-color: #0f9d58; }
@@ -1359,11 +1359,11 @@ a.thumbnail:focus {
       background-color: #dc4910; }
   .button.danger {
     border-color: transparent;
-    background-color: #B43C3C; }
+    background-color: #bc2a47; }
     .button.danger:hover {
-      background-color: #8e2f2f; }
+      background-color: #922137; }
     .button.danger:active {
-      background-color: #8e2f2f; }
+      background-color: #922137; }
   .button.disabled {
     border-color: transparent;
     background-color: #d3d3d3;
@@ -1374,8 +1374,8 @@ a.thumbnail:focus {
       background-color: #bababa; }
   .button.ghost {
     background-color: transparent;
-    border: 2px solid #B43C3C;
-    color: #B43C3C;
+    border: 2px solid #bc2a47;
+    color: #bc2a47;
     padding: 10px 20px; }
     .button.ghost.success {
       color: #0f9d58;
@@ -1384,13 +1384,13 @@ a.thumbnail:focus {
         background-color: #0f9d58; }
     .button.ghost a {
       font-family: 'Open Sans', sans-serif;
-      color: #B43C3C;
+      color: #bc2a47;
       font-weight: 500; }
       .button.ghost a:hover {
         color: white;
         text-decoration: none; }
     .button.ghost:hover {
-      background-color: #B43C3C;
+      background-color: #bc2a47;
       color: white; }
   .button.large {
     padding: 15px 30px;
@@ -2221,10 +2221,32 @@ header {
     width: 100%;
     height: 100px;
     line-height: 100px; }
+    header .title-bar .app-logo {
+      width: 90px;
+      height: 70px;
+      margin: 15px 0 0 20px;
+      background: top left no-repeat url("/img/HPC-logo-white.png");
+      background-size: 100%;
+      float: left;
+      display: inline-block; }
+      @media print {
+        header .title-bar .app-logo {
+          background: top left no-repeat url("/img/HPC-logo.png"); } }
+    header .title-bar h3.app-logo {
+      margin-top: 35px;
+      width: 110px;
+      height: 90px; }
+    header .title-bar .app-logo-print {
+      display: none; }
     header .title-bar .site-title {
       color: #DCD8CD;
       font-size: 1.5em;
+      line-height: 1;
       font-weight: 200; }
+      header .title-bar .site-title img {
+        height: 70px;
+        margin-top: 10px;
+        padding-left: 20px; }
     header .title-bar h3.site-title {
       line-height: 150px;
       margin-bottom: 0; }

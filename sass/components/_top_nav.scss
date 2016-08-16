@@ -25,10 +25,39 @@ header {
 		height: 100px;
 		line-height: 100px;
 
+		.app-logo {
+			width: 90px;
+			height: 70px;
+			margin: 15px 0 0 20px;
+			background: top left no-repeat url('/img/HPC-logo-white.png');
+			background-size: 100%;
+			float: left;
+			display: inline-block;
+
+			@media print {
+				background: top left no-repeat url('/img/HPC-logo.png');
+			}
+		}
+
+		h3.app-logo {
+			margin-top: 35px;
+			width: 110px;
+			height: 90px;
+		}
+
+		.app-logo-print { display: none; }
+
 		.site-title {
 			color: $light-text;
 			font-size: 1.5em;
+			line-height: 1;
 			font-weight: 200;
+
+			img {
+				height: 70px;
+				margin-top: 10px;
+				padding-left: 20px;
+			}
 		}
 
 		h3.site-title {

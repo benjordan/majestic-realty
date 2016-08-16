@@ -11,6 +11,16 @@
 
 @media print {
 
+	.app-logo-print {
+		margin-bottom: 20px;
+		float: left;
+		display: inline-block;
+	}
+
+	.home-link {
+		display: none;
+	}
+
 	body, #content, #container {
 		width: 100%;
 		margin: 0;
