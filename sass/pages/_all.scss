@@ -33,6 +33,10 @@
 	.page-section {
 		padding: 30px 0;
 		border-bottom: 1px solid $neutral2;
+
+		&.no-border {
+			border-bottom: none;
+		}
 	}
 
 }

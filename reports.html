@@ -60,180 +60,101 @@
 	<div class="container">
 	<div class="row page-content">
 
-		<div class="col12 page-header">
-			<h2>Payroll Reports</h2><hr>
+		<div class="col6 page-header">
+			<h2>Open Maintenance Requests</h2><hr>
 		</div>
 
-		<div class="col12 page-section">
+		<div class="col6 page-header">
+			<h2>Property Payroll Summary</h2><hr>
+		</div>
+
+		<div class="col6 page-section no-border">
+			<a href="/reports/open-requests.html"><button class="button primary inline">Generate Report</button></a>
+		</div> <!-- /page-section -->
+
+		<div class="col6 page-section no-border">
 			<div class="row">
-				<div class="col4">
-					<label>Select Pay Period</label>
+				<div class="col6">
+				<label>Select Pay Period</label>
+				<div class="select-style">
+					<select name="period_select" class="form-control">
+						<option value="">~ Select Period</option>
+					</select>
+				</div> <!-- /select-style -->
+				</div>
+				<div class="col6">
+				<a href="/reports/property-payroll.html"><button class="button primary inline">Generate Report</button></a>
+				</div>
+			</div>
+		</div> <!-- /page-section -->
+
+		<div class="col12 page-header">
+			<h2>Maintenance Request Detail</h2><hr>
+		</div>
+
+		<div class="col12 page-section no-border">
+			<div class="row">
+				<div class="col2">
+					<label>Start Date</label>
+					<input type="date" name="start_date">
+				</div>
+				<div class="col2">
+					<label>End Date</label>
+					<input type="date" name="start_date">
+				</div>
+				<div class="col3">
+					<label>Category</label>
 					<div class="select-style">
 						<select name="period_select" class="form-control">
-							<option value="">~ Select Period</option>
+							<option value="">~ Select Category</option>
 						</select>
 					</div> <!-- /select-style -->
-				</div> <!-- /col6 -->
-				<div class="col8">
-					<a href=""><button class="button primary inline">Payroll Summary</button></a>
-					<a href=""><button class="button primary inline">Employee Timecards</button></a>
+				</div> <!-- /col3 -->
+				<div class="col3">
+					<label>Property</label>
+					<div class="select-style">
+						<select name="period_select" class="form-control">
+							<option value="">~ Select Property</option>
+						</select>
+					</div> <!-- /select-style -->
+				</div> <!-- /col3 -->
+				<div class="col2">
+					<label>Employee</label>
+					<input type="text" name="start_date" placeholder="Start Typing...">
+				</div>
+				<div class="col6">
+					<a href="/reports/request-detail.html"><button class="button primary">Generate Report</button></a>
 				</div>
 			</div> <!-- /row -->
 		</div> <!-- /page-section -->
 
 		<div class="col12 page-header">
-			<h2>Mainteanance Request Reports</h2><hr>
+			<h2>Employee Time Card</h2><hr>
 		</div>
 
 		<div class="col12 page-section">
 			<div class="row">
 				<div class="col4">
-					<label>Select Pay Period</label>
-					<div class="select-style">
-						<select name="period_select" class="form-control">
-							<option value="">~ Select Period</option>
-						</select>
-					</div> <!-- /select-style -->
-				</div> <!-- /col6 -->
-				<div class="col8">
-					<a href=""><button class="button primary inline">All by Employee</button></a>
-					<a href=""><button class="button primary inline">All by Property</button></a>
-					<a href=""><button class="button primary inline">All Open Requests</button></a>
+				<label>Select Pay Period</label>
+				<div class="select-style">
+					<select name="period_select" class="form-control">
+						<option value="">~ Select Period</option>
+					</select>
+				</div> <!-- /select-style -->
 				</div>
-			</div> <!-- /row -->
+				<div class="col4">
+				<a href="/reports/employee-timecard.html"><button class="button primary inline">Generate Report</button></a>
+				</div>
+			</div>
 		</div> <!-- /page-section -->
 
 	</div> <!-- /row page-content -->
 	</div> <!-- /container -->
 
-	<!-- ADD MODAL FOR ADD NEW FORM -->
-	<div class="remodal" data-remodal-id="modal" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
-	  <button data-remodal-action="close" class="remodal-close"></button>
-	  <h3>Add Service Contract</h3>
-	  <form method="post" action="" id="add-service-contract-form">
-
-	  	<div class="form-options">
-	  		<div class="col3">
-		  		<label for="special_project">
-		  			<input type="checkbox"> Is special project?
-		  		</label>
-		  	</div>
-
-		  	<div class="col3">
-		  		<label for="permission">
-		  			<input type="checkbox"> Permission to enter
-		  		</label>
-		  	</div>
-
-		  	<div class="col3">
-		  		<label for="has_alarm">
-		  			<input type="checkbox"> Unit has alarm
-		  		</label>
-		  	</div>
-
-		  	<div class="col3">
-		  		<label for="has_pets">
-		  			<input type="checkbox"> Unit has pets
-		  		</label>
-		  	</div>
-	  	</div>
-
-	  	<div class="col4">
-		  	<label for="property">Property:</label>
-	  		<select class="form-control" name="property">
-	  			<option value="">~Choose Property</option>
-	  			<option value="1">17000</option>
-	  			<option value="2">Bamboo, Mesquite</option>
-	  		</select>
-	  	</div>
-
-	  	<div class="col4">
-	  		<label for="unit">Unit:</label>
-	  		<select class="form-control" name="property">
-	  			<option value="">~Choose Unit</option>
-	  			<option value="1">17000</option>
-	  			<option value="2">Bamboo, Mesquite</option>
-	  		</select>
-	  	</div>
-
-	  	<div class="col4">
-	  		<label for="request_category">Request Category:</label>
-	  		<select class="form-control" name="request_category">
-	  			<option value="">~Choose Unit</option>
-	  		</select>
-	  	</div>
-
-	  	<div class="col12">
-	  		<label for="tenant_name">Tenant Name:</label>
-	  		<input type="text" name="tenant_name" class="form-control">
-	  	</div>
-
-	  	<div class="col6">
-	  		<label for="email">Email <small>[Please update if incorrect]</small>:</label>
-	  		<input type="text" name="email" class="form-control">
-	  	</div>
-
-	  	<div class="col6">
-	  		<label for="phone">Phone <small>[Please update if incorrect]</small>:</label>
-	  		<input type="text" name="phone" class="form-control">
-	  	</div>
-
-	  	<div class="col12">
-	  		<label for="request_details">Request Detail:</label>
-	  		<textarea name="request_details"></textarea>
-	  	</div>
-
-	  	<div class="col12">
-	  		<input type="submit" data-remodal-action="confirm" class="button primary large remodal-confirm">
-	  	</div>
-
-	  </form>
-	</div>
 
 	<footer>
 		&copy; Copyright Things.</div>
 	</footer>
-
-	<!-- ADD MODAL FOR ADD NEW FORM -->
-	<div class="remodal" data-remodal-id="log" data-remodal-options="hashTracking: false, closeOnOutsideClick: true">
-	  <button data-remodal-action="close" class="remodal-close"></button>
-	  <h3>Add Maintenance Log</h3>
-	  <form method="post" action="" id="add-maintenance-log">
-			<div class="row">
-				<div class="col5">
-					<label>Employee:</label>
-					<div class="select-style">
-					<select name="dispatch" class="form-control">
-						<option value="">~ Select Employee</option>
-						<option value="Name">Employee Name</option>
-					</select>
-					</div>
-				</div>
-
-				<div class="col3">
-					<label>Date:</label>
-					<input type="date" name="date" class="form-control">
-				</div>
-
-				<div class="col2">
-					<label>Start Time:</label>
-					<input type="time" name="start_time" class="form-control">
-				</div>
-
-				<div class="col2">
-					<label>End Time:</label>
-					<input type="time" name="end_time" class="form-control">
-				</div>
-			</div>
-
-			<div class="row">
-		  	<div class="col12">
-		  		<input type="submit" data-remodal-action="confirm" class="button primary large remodal-confirm inline">
-		  	</div>
-	  	</div>
-
-	  </form>
-	</div>
 
 	<script src="js/vendor/jquery-2.1.1.min.js"></script>
 	<script src="js/vendor/responsive-nav.min.js"></script>
