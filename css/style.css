@@ -207,6 +207,11 @@ body.account {
     text-align: center;
     width: 20%;
     min-width: 300px; }
+    body.account .form-holder .app-logo {
+      width: 150px;
+      margin: 0 auto 40px auto; }
+      body.account .form-holder .app-logo img {
+        max-width: 100%; }
     body.account .form-holder .form-content {
       color: #DCD8CD; }
     body.account .form-holder .form-signin {
