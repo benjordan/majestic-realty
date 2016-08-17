@@ -6,12 +6,6 @@
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact; } }
 @media print {
-  .app-logo-print {
-    margin-bottom: 20px; }
-
-  .home-link {
-    display: none; }
-
   body, #content, #container {
     width: 100%;
     margin: 0;
@@ -76,20 +70,32 @@
     font-size: 90%;
     font-style: italic; }
 
+  .app-logo-print {
+    margin-bottom: 20px;
+    width: 20%;
+    float: right;
+    display: inline-block;
+    text-align: right; }
+
+  .home-link {
+    display: none; }
+
+  .print {
+    display: none; }
+
   .report-title {
-    width: 55%;
-    float: left; }
+    width: 80%;
+    float: left;
+    display: inline-block; }
 
   .run-date {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 75%;
     font-weight: 300;
-    margin-bottom: 20px;
-    float: right;
-    width: 40%;
-    text-align: right;
-    margin-top: 20px; }
+    float: left;
+    width: 80%;
+    margin-top: 15px; }
 
   a:link, a:visited {
     color: #00c;
