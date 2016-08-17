@@ -283,6 +283,9 @@ body.account {
 .report-title {
   font-weight: 300; }
 
+tr.divider {
+  border-bottom: 2px solid #d3d3d3; }
+
 .report-header-row {
   padding: 10px 0 20px 0;
   float: left;
