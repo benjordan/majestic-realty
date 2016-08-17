@@ -15,6 +15,31 @@
 		padding: 20px 40px 60px 40px;
 	}
 
+	&.report-holder {
+		padding: 20px 40px 60px 40px;
+		margin-bottom: 20px;
+
+		.report-header {
+			border-bottom: 1px solid #eaeaea;
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+		}
+
+		h2 {
+			margin: 0;
+			font-weight: 200;
+		}
+
+		h4 {
+			font-size: 12px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			margin-top: 10px;
+			font-weight: 600;
+			color: $medium-grey;
+		}
+	}
+
 	.page-header {
 		padding: 20px 0;
 		margin-bottom: 30px;

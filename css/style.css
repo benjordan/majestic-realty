@@ -285,6 +285,23 @@ body.account {
   margin-top: 0; }
   .container .page-content {
     padding: 20px 40px 60px 40px; }
+  .container.report-holder {
+    padding: 20px 40px 60px 40px;
+    margin-bottom: 20px; }
+    .container.report-holder .report-header {
+      border-bottom: 1px solid #eaeaea;
+      margin-bottom: 20px;
+      padding-bottom: 20px; }
+    .container.report-holder h2 {
+      margin: 0;
+      font-weight: 200; }
+    .container.report-holder h4 {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 10px;
+      font-weight: 600;
+      color: #82827d; }
   .container .page-header {
     padding: 20px 0;
     margin-bottom: 30px;
