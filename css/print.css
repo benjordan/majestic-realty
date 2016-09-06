@@ -19,16 +19,27 @@
   .top-banner {
     display: none; }
 
+  h4 {
+    margin-bottom: 20px; }
+
   table {
     font-size: 80%;
     width: 100%;
     max-width: 100%;
     margin-bottom: 30px; }
+    table.small {
+      font-size: 60%; }
+      table.small th, table.small td {
+        padding: 5px;
+        font-size: 10px; }
 
   th,
   td {
     padding: 10px 7px;
     text-align: center; }
+    th.total,
+    td.total {
+      background-color: #eaeaea; }
 
   th {
     border-bottom: 2px solid #333333; }

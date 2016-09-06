@@ -333,6 +333,9 @@ tr.divider {
     .container .page-section.no-border {
       border-bottom: none; }
 
+table .total {
+  background-color: #F7F6E4; }
+
 .alert {
   border-radius: 2px;
   font-size: 14px;
